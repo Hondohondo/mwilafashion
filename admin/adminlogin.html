@@ -1,0 +1,19 @@
+<!--
+This is a simple HTML form asking for the user name and password for our administrator. After the manager clicks the Login button, the page passes the form information to the validate.php file using the HTML POST method. All the action happens here.
+-->
+
+
+<h2><br>Store Web Site Administration<br></h2>
+<p>Please log in below</p>
+<form action="validate.php" method="post">
+    <b>User Name:</b><br>
+    <input type="text" size="20" name="userid"><br>
+    <br>
+    <b>Password:</b><br><input type="password" size="20" name="password">
+    <br><br>
+    <input type="submit" value="Login">
+</form>
+
+<!--
+The validate.php file isn't really part of our admin Web page. You'll notice that the login form doesn't return us to the admin.php program to display content in the main Web page. Instead, it passes control directly to the validate.php page
+-->
